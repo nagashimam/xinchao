@@ -1,1 +1,72 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$nha-hang-primary: mat-palette($mat-red);
+$nha-hang-accent: mat-palette($mat-yellow);
+// The warn palette is optional (defaults to red).
+$nha-hang-warn: mat-palette($mat-blue);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$nha-hang-theme: mat-light-theme(
+  $nha-hang-primary,
+  $nha-hang-accent,
+  $nha-hang-warn
+);
+
+// Insert custom background color
+$nha-hang-background: #fffbda;
+$background: map-get($nha-hang-theme, "background");
+$background: map_merge(
+  $background,
+  (
+    "background": $nha-hang-background,
+  )
+);
+$nha-hang-theme: map_merge(
+  $nha-hang-theme,
+  (
+    "background": $background,
+  )
+);
+
+// Insert custom foreground color
+$nha-hang-foreground: #37474f;
+$foreground: map-get($nha-hang-theme, "foreground");
+$foreground: map_merge(
+  $foreground,
+  (
+    "foreground": $nha-hang-foreground,
+  )
+);
+$nha-hang-theme: map_merge(
+  $nha-hang-theme,
+  (
+    "foreground": $foreground,
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($nha-hang-theme);
+
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -1,0 +1,11 @@
+<nav mat-tab-nav-bar>
+  <a
+    mat-tab-link
+    *ngFor="let path of paths; let i = index"
+    [routerLink]="path"
+    (click)="activeLinkIndex = i"
+    [active]="activeLinkIndex === i"
+  >
+    {{ path }}
+  </a>
+</nav>

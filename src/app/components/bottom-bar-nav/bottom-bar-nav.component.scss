@@ -1,0 +1,19 @@
+@import "../../../../src/styles.scss";
+
+$accent: mat-color($nha-hang-accent);
+
+nav {
+  position: absolute;
+  bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+
+  padding: 10px;
+  background-color: $accent;
+}
+
+a {
+  width: 25%;
+}
