@@ -1,8 +1,21 @@
-.image {
-  width: 60%;
+mat-card {
+  margin-top: 4px;
 }
 
-mat-card {
-  text-align: center;
-  margin-top: 4px;
+.container {
+  $padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  margin-bottom: 92px;
+}
+
+@media screen and (min-width: 1280px) {
+  .card-container {
+    width: 50%;
+  }
+
+  .card-container:nth-child(1) {
+    padding-right: 8px;
+  }
 }

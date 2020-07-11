@@ -1,0 +1,10 @@
+<div fxLayout="column" fxLayoutAlign="space-between" class="container">
+  <mat-card *ngFor="let member of members">
+    <mat-card-header>
+      <mat-card-title>{{ member.name }} </mat-card-title>
+      <mat-card-subtitle>役割:{{ member.role }}</mat-card-subtitle>
+      <img mat-card-avatar src="{{ jsonServer }}{{ member.image }}" />
+    </mat-card-header>
+    <mat-card-content>{{ member.introduction }}</mat-card-content>
+  </mat-card>
+</div>

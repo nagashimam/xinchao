@@ -1,1 +1,11 @@
-<p>about works!</p>
+<div class="container" fxLayout="column" fxLayout.xl="row" fxLayout.lg="row">
+  <div class="card-container">
+    <h1>当店の歴史</h1>
+    <app-story></app-story>
+  </div>
+  <div class="card-container">
+    <h1>当店のメンバー</h1>
+    <app-member *ngIf="members" [members]="members"></app-member>
+    <app-spinner [data]="members" [errorMessage]="errorMessage"></app-spinner>
+  </div>
+</div>

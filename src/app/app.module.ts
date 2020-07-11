@@ -21,6 +21,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { DishCardComponent } from './components/dish-card/dish-card.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { StoryComponent } from './components/story/story.component';
+import { LeaderComponent } from './components/leader/leader.component';
+import { MemberComponent } from './components/member/member.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     WelcomeComponent,
     DishCardComponent,
     SpinnerComponent,
+    StoryComponent,
+    LeaderComponent,
+    MemberComponent,
   ],
   imports: [
     AppRoutingModule,

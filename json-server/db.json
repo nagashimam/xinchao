@@ -27,5 +27,28 @@
       "featured": true,
       "comments": []
     }
+  ],
+  "members": [
+    {
+      "id": 0,
+      "name": "Ngoc Tram",
+      "image": "/images/ngoc-tram.jpg",
+      "role": "シェフ",
+      "introduction": "ベトナム料理ならなんでも作れる無敵のシェフ。でも好きなのはフランス料理"
+    },
+    {
+      "id": 1,
+      "name": "My Tam",
+      "image": "/images/my-tam.jpg",
+      "role": "経理",
+      "introduction": "毎月お金のやりくりで頭を痛めている。趣味は貯金"
+    },
+    {
+      "id": 2,
+      "name": "Minh Nguyen",
+      "image": "/images/minh-nguyen.jpg",
+      "role": "食材調達",
+      "introduction": "外に出ている間、本当に農園に行っているのかそれとも遊んでいるのかは、誰も知らない"
+    }
   ]
 }
