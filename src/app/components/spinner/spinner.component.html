@@ -1,0 +1,8 @@
+<div fxFlex [hidden]="data">
+  <mat-spinner> </mat-spinner>
+  <h4>データ読み込み中...!!!</h4>
+</div>
+<div fxFlex *ngIf="errorMessage">
+  <h2>エラー!</h2>
+  <h4>{{ errorMessage }}</h4>
+</div>

@@ -1,1 +1,14 @@
-<p>home works!</p>
+<div class="container" fxLayout="column" fxLayout.xl="row" fxLayout.lg="row">
+  <div class="card-container">
+    <h1>お店の紹介</h1>
+    <app-welcome></app-welcome>
+  </div>
+  <div class="card-container">
+    <h1>今月のおすすめ</h1>
+    <app-dish-card *ngIf="featuredDish" [dish]="featuredDish"></app-dish-card>
+    <app-spinner
+      [data]="featuredDish"
+      [errorMessage]="errorMessage"
+    ></app-spinner>
+  </div>
+</div>
