@@ -1,5 +1,8 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatCardModule } from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgModule } from '@angular/core';
@@ -12,6 +15,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HeaderComponent } from './components/header/header.component';
+import { NavBarItemComponent } from './components/nav-bar-item/nav-bar-item.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,14 @@ import { HeaderComponent } from './components/header/header.component';
     ContactComponent,
     AboutComponent,
     HeaderComponent,
+    NavBarItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
+    MatIconModule,
     MatTabsModule,
     MatToolbarModule,
   ],
