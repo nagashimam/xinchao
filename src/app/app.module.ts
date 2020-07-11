@@ -15,7 +15,6 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HeaderComponent } from './components/header/header.component';
-import { NavBarItemComponent } from './components/nav-bar-item/nav-bar-item.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +25,6 @@ import { NavBarItemComponent } from './components/nav-bar-item/nav-bar-item.comp
     ContactComponent,
     AboutComponent,
     HeaderComponent,
-    NavBarItemComponent,
   ],
   imports: [
     BrowserModule,

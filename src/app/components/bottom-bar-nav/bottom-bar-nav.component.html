@@ -6,6 +6,14 @@
     (click)="activeLinkIndex = i"
     [active]="activeLinkIndex === i"
   >
-    <mat-icon>mood</mat-icon>{{ path }}
+    <div
+      fxLayout="column"
+      fxLayout.xl="row"
+      fxLayout.lg="row"
+      fxLayoutAlign="center center"
+    >
+      <mat-icon>mood</mat-icon>
+      <span>{{ path }}</span>
+    </div>
   </a>
 </nav>
