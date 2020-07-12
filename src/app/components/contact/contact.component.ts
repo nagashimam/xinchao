@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { jsonServer } from 'src/environments/environment';
+import { jsonServer, imagePath } from 'src/environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -9,15 +9,15 @@ import { jsonServer } from 'src/environments/environment';
 export class ContactComponent implements OnInit {
   contacts = [
     {
-      icon: `${jsonServer}/images/phone.svg`,
+      icon: imagePath('/images/phone.svg'),
       value: '0120-XXX-0000',
     },
     {
-      icon: `${jsonServer}/images/facebook.svg`,
+      icon: imagePath('/images/facebook.svg'),
       value: 'https://facebook/xinchao/example.com',
     },
     {
-      icon: `${jsonServer}/images/email.svg`,
+      icon: imagePath('/images/email.svg'),
       value: 'xinchao@example.com',
     },
   ];

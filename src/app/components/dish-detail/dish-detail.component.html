@@ -2,18 +2,23 @@
   <h2>メニュー</h2>
   <app-dish-card [dish]="dish"></app-dish-card>
   <h2>レビュー</h2>
-  <mat-card *ngFor="let comment of dish.comments" class="card-background">
-    <mat-card-header>
-      <mat-card-title>{{ comment.author }} </mat-card-title>
-      <mat-card-subtitle>星{{ comment.star }}つ</mat-card-subtitle>
-      <img
-        mat-card-avatar
-        src="{{ jsonServer }}/images/account.jpg"
-        alt="プロフィール画像"
-      />
-    </mat-card-header>
-    <mat-card-content>{{ comment.comment }}</mat-card-content>
-  </mat-card>
+  <div *ngIf="dish.comments.length > 0">
+    <mat-card *ngFor="let comment of dish.comments" class="card-background">
+      <mat-card-header>
+        <mat-card-title>{{ comment.author }} </mat-card-title>
+        <mat-card-subtitle>星{{ comment.star }}つ</mat-card-subtitle>
+        <img
+          mat-card-avatar
+          src="{{ imagePath('/images/account.jpg') }}"
+          alt="プロフィール画像"
+        />
+      </mat-card-header>
+      <mat-card-content>{{ comment.comment }}</mat-card-content>
+    </mat-card>
+  </div>
+  <div *ngIf="dish.comments.length === 0">
+    レビューがまだないので書いてください!
+  </div>
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button color="accent" (click)="openReviewComponent()">

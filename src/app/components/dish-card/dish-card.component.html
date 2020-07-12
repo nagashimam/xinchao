@@ -8,8 +8,8 @@
   </mat-card-content>
   <img
     mat-card-image
-    src="{{ jsonServer }}{{ dish.image }}"
-    alt="{{ jsonServer }}{{ dish.image }}"
+    src="{{ imagePath(dish.image) }}"
+    alt="{{ dish.name }}の写真"
     class="image"
   />
 </mat-card>

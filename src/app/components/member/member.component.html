@@ -4,7 +4,7 @@
     <mat-card-subtitle>役割:{{ member.role }}</mat-card-subtitle>
     <img
       mat-card-avatar
-      src="{{ jsonServer }}{{ member.image }}"
+      src="{{ imagePath(member.image) }}"
       alt="{{ member.name }}の写真"
     />
   </mat-card-header>

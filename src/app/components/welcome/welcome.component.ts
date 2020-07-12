@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { jsonServer } from 'src/environments/environment';
+import { imagePath } from '../../../environments/environment';
 
 @Component({
   selector: 'app-welcome',
@@ -7,7 +8,7 @@ import { jsonServer } from 'src/environments/environment';
   styleUrls: ['./welcome.component.scss'],
 })
 export class WelcomeComponent implements OnInit {
-  jsonServer = jsonServer;
+  imagePath = imagePath;
   constructor() {}
 
   ngOnInit(): void {}

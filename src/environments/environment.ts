@@ -6,7 +6,10 @@ export const environment = {
   production: false,
 };
 
-export const jsonServer = 'http://localhost:3000';
+export const jsonServer =
+  'https://my-json-server.typicode.com/nagashimam/xinchao/';
+export const imagePath = (imageName: string) =>
+  `https://github.com/nagashimam/xinchao/blob/master/json-server/public${imageName}?raw=true`;
 
 /*
  * For easier debugging in development mode, you can import the following file

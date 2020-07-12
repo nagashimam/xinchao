@@ -5,7 +5,7 @@ import {
   MatDialog,
 } from '@angular/material/dialog';
 import { Dish } from '../../models/dish';
-import { jsonServer } from '../../../environments/environment';
+import { jsonServer, imagePath } from '../../../environments/environment';
 import { ReviewComponent } from '../review/review.component';
 
 @Component({
@@ -16,6 +16,7 @@ import { ReviewComponent } from '../review/review.component';
 export class DishDetailComponent implements OnInit {
   dish: Dish;
   jsonServer = jsonServer;
+  imagePath = imagePath;
   constructor(
     private matDialogRef: MatDialogRef<DishDetailComponent>,
     private matDialog: MatDialog,

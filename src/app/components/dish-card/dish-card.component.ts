@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Dish } from 'src/app/models/dish';
 import { jsonServer } from '../../../environments/environment';
+import { imagePath } from '../../../environments/environment.prod';
 
 @Component({
   selector: 'app-dish-card',
@@ -10,6 +11,7 @@ import { jsonServer } from '../../../environments/environment';
 export class DishCardComponent implements OnInit {
   @Input() dish: Dish;
   jsonServer = jsonServer;
+  imagePath = imagePath;
   constructor() {}
 
   ngOnInit(): void {

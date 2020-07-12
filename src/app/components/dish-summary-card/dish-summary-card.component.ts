@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Dish } from 'src/app/models/dish';
-import { jsonServer } from 'src/environments/environment';
+import { jsonServer, imagePath } from 'src/environments/environment';
 import { MatDialog } from '@angular/material/dialog';
 import { DishDetailComponent } from '../dish-detail/dish-detail.component';
 
@@ -11,6 +11,7 @@ import { DishDetailComponent } from '../dish-detail/dish-detail.component';
 })
 export class DishSummaryCardComponent implements OnInit {
   @Input() dishes: Dish[];
+  imagePath = imagePath;
   jsonServer = jsonServer;
   constructor(private matDialog: MatDialog) {}
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { jsonServer } from 'src/environments/environment';
+import { imagePath } from '../../../environments/environment';
 
 @Component({
   selector: 'app-story',
@@ -7,7 +7,7 @@ import { jsonServer } from 'src/environments/environment';
   styleUrls: ['./story.component.scss'],
 })
 export class StoryComponent implements OnInit {
-  jsonServer = jsonServer;
+  imagePath = imagePath;
   constructor() {}
 
   ngOnInit(): void {}
