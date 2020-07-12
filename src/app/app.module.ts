@@ -24,8 +24,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { StoryComponent } from './components/story/story.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
-import { MenuDetailComponent } from './components/menu-detail/menu-detail.component';
-import { MenuSummaryComponent } from './components/menu-summary/menu-summary.component';
+import { DishSummaryCardComponent } from './components/dish-summary-card/dish-summary-card.component';
 
 @NgModule({
   declarations: [
@@ -41,8 +40,7 @@ import { MenuSummaryComponent } from './components/menu-summary/menu-summary.com
     SpinnerComponent,
     StoryComponent,
     WelcomeComponent,
-    MenuDetailComponent,
-    MenuSummaryComponent,
+    DishSummaryCardComponent,
   ],
   imports: [
     AppRoutingModule,

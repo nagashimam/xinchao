@@ -1,9 +1,7 @@
-<div>
-  <div>
-    <app-menu-summary [dishes]="allDishes"></app-menu-summary>
+<div class="container" fxLayout="column">
+  <div class="card-container" fxLayout="column">
+    <h1>メニュー</h1>
+    <app-dish-summary-card [dishes]="allDishes"></app-dish-summary-card>
     <app-spinner [data]="allDishes" [errorMessage]="errorMessage"></app-spinner>
-  </div>
-  <div>
-    <!-- レビュー一覧 -->
   </div>
 </div>

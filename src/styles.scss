@@ -41,7 +41,7 @@ $nha-hang-theme: map_merge(
 );
 
 // Insert custom foreground color
-$nha-hang-foreground: #cccc1c;
+$nha-hang-foreground: #ffd900;
 $foreground: map-get($nha-hang-theme, "foreground");
 $foreground: map_merge(
   $foreground,
