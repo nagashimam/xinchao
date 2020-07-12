@@ -1,3 +1,13 @@
 .mat-slider {
   margin: 16px;
 }
+
+div {
+  #stepper {
+    .mat-step {
+      .mat-step-label {
+        white-space: normal;
+      }
+    }
+  }
+}
