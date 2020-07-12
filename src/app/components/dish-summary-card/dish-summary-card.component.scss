@@ -6,3 +6,10 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+@media screen and (min-width: 1280px) {
+  .mat-card {
+    width: 45%;
+    margin-right: 8px;
+  }
+}
