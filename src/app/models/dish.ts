@@ -1,3 +1,4 @@
+import { Comment } from './comment';
 export class Dish {
   id: string;
   name: string;
@@ -5,6 +6,6 @@ export class Dish {
   description: string;
   image: string;
   featured: boolean;
-  comments: string[];
+  comments: Comment[];
   constructor() {}
 }

@@ -1,0 +1,77 @@
+<mat-vertical-stepper
+  *ngIf="!isSendingReview"
+  [linear]="true"
+  #stepper
+  color="accent"
+>
+  <mat-step [stepControl]="authorForm">
+    <form novalidate [formGroup]="authorForm">
+      <ng-template matStepLabel>お名前を教えてください </ng-template>
+      <mat-form-field>
+        <mat-label>お名前</mat-label>
+        <input
+          matInput
+          placeholder="仮名で結構です"
+          formControlName="author"
+          required
+        />
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>次へ</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="starForm">
+    <form novalidate [formGroup]="starForm">
+      <ng-template matStepLabel
+        >当店の{{ dish.name }}は5点満点中、何点ですか?
+      </ng-template>
+      <mat-slider
+        formControlName="star"
+        min="0"
+        max="5"
+        step="1"
+        value="0"
+        thumbLabel
+        tickInterval="1"
+      ></mat-slider>
+      <div>
+        <button mat-button matStepperPrevious>戻る</button>
+        <button mat-button matStepperNext>次へ</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="commentForm">
+    <form novalidate [formGroup]="commentForm">
+      <ng-template matStepLabel>ご意見をどうぞ</ng-template>
+      <mat-form-field>
+        <textarea
+          matInput
+          placeholder="ご意見"
+          formControlName="comment"
+          required
+        ></textarea>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>戻る</button>
+        <button mat-button matStepperNext>次へ</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>ありがとうございました!</ng-template>
+    <p>レビューはこれで終わりです</p>
+    <div>
+      <button mat-button matStepperPrevious>戻る</button>
+      <button mat-button (click)="onSubmit()">送信</button>
+    </div>
+  </mat-step>
+</mat-vertical-stepper>
+<div fxFlex *ngIf="isSendingReview">
+  <mat-spinner color="accent"> </mat-spinner>
+  <h4>データ送信中...!!!</h4>
+</div>
+<div fxFlex *ngIf="errorMessage">
+  <h2>エラー!</h2>
+  <h4>{{ errorMessage }}</h4>
+</div>

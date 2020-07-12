@@ -1,0 +1,7 @@
+@import "../../../../src/styles.scss";
+
+.mat-toolbar {
+  &.mat-accent {
+    color: $black-font;
+  }
+}
