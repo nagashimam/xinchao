@@ -2,6 +2,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
@@ -15,15 +16,16 @@ import { AppComponent } from './app.component';
 import { BottomBarNavComponent } from './components/bottom-bar-nav/bottom-bar-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './components/contact/contact.component';
-import { HomeComponent } from './components/home/home.component';
-import { MenuComponent } from './components/menu/menu.component';
-import { HeaderComponent } from './components/header/header.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
 import { DishCardComponent } from './components/dish-card/dish-card.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { MemberComponent } from './components/member/member.component';
+import { MenuComponent } from './components/menu/menu.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { StoryComponent } from './components/story/story.component';
-import { LeaderComponent } from './components/leader/leader.component';
-import { MemberComponent } from './components/member/member.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { MenuDetailComponent } from './components/menu-detail/menu-detail.component';
+import { MenuSummaryComponent } from './components/menu-summary/menu-summary.component';
 
 @NgModule({
   declarations: [
@@ -31,15 +33,16 @@ import { MemberComponent } from './components/member/member.component';
     AppComponent,
     BottomBarNavComponent,
     ContactComponent,
+    DishCardComponent,
     HeaderComponent,
     HomeComponent,
+    MemberComponent,
     MenuComponent,
-    WelcomeComponent,
-    DishCardComponent,
     SpinnerComponent,
     StoryComponent,
-    LeaderComponent,
-    MemberComponent,
+    WelcomeComponent,
+    MenuDetailComponent,
+    MenuSummaryComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -47,6 +50,7 @@ import { MemberComponent } from './components/member/member.component';
     BrowserModule,
     FlexLayoutModule,
     HttpClientModule,
+    MatButtonModule,
     MatCardModule,
     MatGridListModule,
     MatIconModule,

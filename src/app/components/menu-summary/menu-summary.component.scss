@@ -1,0 +1,8 @@
+@import "../../../../src/app/styles/card.scss";
+
+.ellipsis {
+  overflow: hidden;
+  /* 文字列を一行にする */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

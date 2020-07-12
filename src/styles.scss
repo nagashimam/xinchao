@@ -13,7 +13,7 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $nha-hang-primary: mat-palette($mat-red);
-$nha-hang-accent: mat-palette($mat-yellow);
+$nha-hang-accent: mat-palette($mat-amber);
 // The warn palette is optional (defaults to red).
 $nha-hang-warn: mat-palette($mat-blue);
 
@@ -25,7 +25,7 @@ $nha-hang-theme: mat-light-theme(
 );
 
 // Insert custom background color
-$nha-hang-background: #fffbda;
+$nha-hang-background: #c90101;
 $background: map-get($nha-hang-theme, "background");
 $background: map_merge(
   $background,
@@ -41,7 +41,7 @@ $nha-hang-theme: map_merge(
 );
 
 // Insert custom foreground color
-$nha-hang-foreground: #37474f;
+$nha-hang-foreground: #cccc1c;
 $foreground: map-get($nha-hang-theme, "foreground");
 $foreground: map_merge(
   $foreground,

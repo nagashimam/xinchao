@@ -19,4 +19,11 @@ export class DishService {
       .pipe(map((dishes) => dishes[0]))
       .pipe(catchError(this.httpError.handleError));
   }
+
+  fetchDishes(): Observable<Dish[]> {
+    const url = `${jsonServer}/dishes`;
+    return this.http
+      .get<Dish[]>(url)
+      .pipe(catchError(this.httpError.handleError));
+  }
 }

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeaderComponent } from './leader.component';
+import { MenuSummaryComponent } from './menu-summary.component';
 
-describe('LeaderComponent', () => {
-  let component: LeaderComponent;
-  let fixture: ComponentFixture<LeaderComponent>;
+describe('MenuSummaryComponent', () => {
+  let component: MenuSummaryComponent;
+  let fixture: ComponentFixture<MenuSummaryComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LeaderComponent ]
+      declarations: [ MenuSummaryComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LeaderComponent);
+    fixture = TestBed.createComponent(MenuSummaryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
