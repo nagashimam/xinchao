@@ -1,0 +1,30 @@
+@import "../../../../src/app/styles/card.scss";
+
+.contact {
+  margin-top: 8px;
+}
+
+img {
+  margin-right: 8px;
+  border-radius: 40%;
+}
+
+@media screen and (max-width: 1279px) {
+  .smallScreen {
+    display: block;
+  }
+
+  .bigScreen {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .smallScreen {
+    display: none;
+  }
+
+  .bigScreen {
+    display: block;
+  }
+}

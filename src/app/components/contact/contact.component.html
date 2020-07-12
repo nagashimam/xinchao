@@ -1,1 +1,45 @@
-<p>contact works!</p>
+<div class="container" fxLayout="column" fxLayout.xl="row" fxLayout.lg="row">
+  <div class="card-container" fxLayout="column">
+    <h1>お越しをお待ちしております</h1>
+    <div
+      *ngFor="let contact of contacts"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+      class="contact"
+    >
+      <img
+        width="40"
+        height="40"
+        src="{{ contact.icon }}"
+        alt="{{ contact.icon }}"
+      />
+      <div>{{ contact.value }}</div>
+    </div>
+  </div>
+  <div class="card-container" fxLayout="column">
+    <h1>地図</h1>
+    <!-- メディアクエリで大きい地図と小さいのとを出し分ける -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251289.9735293451!2d103.81733740435146!3d10.228815472051641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a78c62b49eda17%3A0x8aa79fbbdd72cdb!2z44OV44O844Kz44OD44Kv5bO2!5e0!3m2!1sja!2sjp!4v1594540938810!5m2!1sja!2sjp"
+      width="600"
+      height="450"
+      frameborder="0"
+      style="border: 0;"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+      class="bigScreen"
+    ></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251289.9735293451!2d103.81733740435146!3d10.228815472051641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a78c62b49eda17%3A0x8aa79fbbdd72cdb!2z44OV44O844Kz44OD44Kv5bO2!5e0!3m2!1sja!2sjp!4v1594540938810!5m2!1sja!2sjp"
+      width="300"
+      height="225"
+      frameborder="0"
+      style="border: 0;"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+      class="smallScreen"
+    ></iframe>
+  </div>
+</div>
