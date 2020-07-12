@@ -4,6 +4,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -25,6 +26,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { StoryComponent } from './components/story/story.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { DishSummaryCardComponent } from './components/dish-summary-card/dish-summary-card.component';
+import { DishDetailComponent } from './components/dish-detail/dish-detail.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import { DishSummaryCardComponent } from './components/dish-summary-card/dish-su
     StoryComponent,
     WelcomeComponent,
     DishSummaryCardComponent,
+    DishDetailComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -50,6 +53,7 @@ import { DishSummaryCardComponent } from './components/dish-summary-card/dish-su
     HttpClientModule,
     MatButtonModule,
     MatCardModule,
+    MatDialogModule,
     MatGridListModule,
     MatIconModule,
     MatProgressSpinnerModule,
@@ -58,5 +62,6 @@ import { DishSummaryCardComponent } from './components/dish-summary-card/dish-su
   ],
   providers: [],
   bootstrap: [AppComponent],
+  entryComponents: [DishDetailComponent],
 })
 export class AppModule {}

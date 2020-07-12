@@ -71,3 +71,8 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.dialog-conteiner .mat-dialog-container {
+  padding: 8px;
+  background: $nha-hang-background;
+}

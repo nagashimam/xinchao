@@ -12,6 +12,6 @@
     {{ dish.description }}
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>もっと詳しく</button>
+    <button mat-button (click)="openDialog(dish)">もっと詳しく</button>
   </mat-card-actions>
 </mat-card>

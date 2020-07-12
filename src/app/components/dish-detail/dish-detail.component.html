@@ -1,0 +1,17 @@
+<mat-dialog-content>
+  <h2>メニュー</h2>
+  <app-dish-card [dish]="dish"></app-dish-card>
+  <h2>レビュー</h2>
+  <mat-card *ngFor="let comment of dish.comments" class="card-background">
+    <mat-card-header>
+      <mat-card-title>{{ comment.author }} </mat-card-title>
+      <mat-card-subtitle>星{{ comment.star }}つ</mat-card-subtitle>
+      <img
+        mat-card-avatar
+        src="{{ jsonServer }}/images/account.jpg"
+        alt="プロフィール画像"
+      />
+    </mat-card-header>
+    <mat-card-content>{{ comment.comment }}</mat-card-content>
+  </mat-card>
+</mat-dialog-content>
